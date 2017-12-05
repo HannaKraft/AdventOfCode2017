@@ -23,12 +23,6 @@ public class Day3
 		int thirdCorner = corner - toNextCorner*2;
 		int fourthCorner = corner - toNextCorner*3;
 		System.out.println("To next corner = "+toNextCorner);
-		//System.out.println("row = " + row);
-		//System.out.println("column = " + column);
-		//System.out.println("secondCorner = " + secondCorner);
-		//System.out.println("thirdCorner = " + thirdCorner);
-		//System.out.println("FourthCorner = " + fourthCorner);
-		//System.out.println("corner = " +corner+" ");
 
 		if(i >= secondCorner)
 		{
@@ -36,7 +30,7 @@ public class Day3
 			{
 				if(j == i)
 				{
-					//System.out.println("row = " + row + "column = " + column);
+					
 
 
 				}
@@ -47,17 +41,15 @@ public class Day3
 				}
 
 			}
-		//System.out.println("column = " + column);
+		
 		int steps = row + Math.abs(column);
-		//System.out.println("number of steps = " + steps);
-
 		}
 		else if(i < secondCorner && i >= thirdCorner )
 
 		{
 			column = column - toNextCorner;
 			
-			//System.out.println("row = " + row);
+			
 			for(int k = secondCorner; k >= thirdCorner; k--)
 			{
 				if(k == i) 
@@ -75,8 +67,7 @@ public class Day3
 				}
 			}
 
-			//System.out.print("steps = " (+ row + Math.abs(column)));
-		}
+					}
 		else if (i <= thirdCorner && i > fourthCorner)
 		{
 
