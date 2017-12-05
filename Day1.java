@@ -28,11 +28,8 @@ public class Day1
         for (int i = 1; i < list.length(); i++)
             if (Integer.parseInt(list.substring(i-1, i)) == Integer.parseInt(list.substring(i, i+1)))
                     sum += Integer.parseInt(list.substring(i, i+1));
-                else{
-                    
-                }
-
-        return sum;
+                
+                        return sum;
     }
 
 
