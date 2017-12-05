@@ -9,11 +9,6 @@ public class Day1
         
    
         String list = new Scanner(new File("list")).useDelimiter("\\Z").next();
-        
-
-
-        
-        
         System.out.println(captcha(list));
 
     }
@@ -34,7 +29,7 @@ public class Day1
             if (Integer.parseInt(list.substring(i-1, i)) == Integer.parseInt(list.substring(i, i+1)))
                     sum += Integer.parseInt(list.substring(i, i+1));
                 else{
-                    sum += 0;
+                    
                 }
 
         return sum;
